@@ -26,6 +26,7 @@ border: none;
 }
 
 
+
 .containerCustomRange{
     display: flex;
     flex-direction: column;
@@ -57,4 +58,87 @@ border: none;
 background-color: rgb(0, 81, 231);
 border-radius: 5px;
 color: white;
+}
+
+/* Peace Timer */
+
+.containerTimer{
+    width: 400px;
+    background-color: white;
+    border: none;
+    height: max-content;
+}
+.headerTimer{
+    background-color: rgb(26, 146, 244);
+    padding-top:50px;
+}
+.h1andP{
+    border-radius: 15px 15px 0 0 ;
+    background-color: white;
+    padding: 15px 10px 10px;
+}
+.h1andP h1{
+margin-top: 0px;
+font-weight: 300;
+padding: 0 10px;
+
+}
+.h1andP p{
+font-size: 18px;
+padding: 10px;
+}
+.contentBtn{
+    /* padding: 0 10px; */
+    background-color: rgb(91, 226, 181);
+    padding-bottom: 50px;
+}
+.contentItem{
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+    padding-bottom: 20px;
+}
+.contentBtn h2{
+margin-top: 0px;
+padding-top: 15px;
+font-weight: 600;
+font-size: 23px;
+background-color: white;
+}
+.buttons{
+    padding: 10px 20px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.buttons>button{
+    height: 70px;
+    width: 80px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(26, 146, 244);
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+
+
+.bgContainer{
+background-image: url("https://img.freepik.com/free-vector/beautiful-landscape-architecture-painting-tree-design_1035-27089.jpg");
+height: 450px;
+width: 600px;
+position: relative;
+background-repeat: no-repeat;
+
+}
+.text-content{
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+.text-content>h3{
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
+color: rgb(0, 72, 19);
+font-size: 28px;
 }
