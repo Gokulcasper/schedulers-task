@@ -129,6 +129,7 @@ height: 450px;
 width: 600px;
 position: relative;
 background-repeat: no-repeat;
+margin: 20px 0;
 
 }
 .text-content{
@@ -141,4 +142,38 @@ background-repeat: no-repeat;
 font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
 color: rgb(0, 72, 19);
 font-size: 28px;
+}
+
+
+/* Bomb Defuser */
+
+.bombContainer{
+    margin: 20px 0;
+    /* background-color: rgb(0, 146, 231); */
+padding: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 400px;
+
+}
+.bombContainer{
+margin-bottom: 10px;
+}
+.imgBomb{
+    height: 200px;
+width: 200px;
+}
+
+.defuser{
+    width: 200px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    border: .5px solid rgb(190, 190, 190);
+}
+
+.bombContainer > p{
+font-size: 28px;
+font-weight: 500;
 }
