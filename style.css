@@ -164,7 +164,6 @@ margin-bottom: 10px;
     height: 200px;
 width: 200px;
 }
-
 .defuser{
     width: 200px;
     margin-top: 15px;
@@ -172,8 +171,52 @@ width: 200px;
     font-size: 20px;
     border: .5px solid rgb(190, 190, 190);
 }
-
 .bombContainer > p{
 font-size: 28px;
 font-weight: 500;
+}
+
+/* Time Converter */
+.convertContainer{
+    background-image:url("https://wallpapers.com/images/hd/dark-blue-background-25rm4ovoxo28lrl9.jpg");
+    width: 300px;
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.convertContainer>h1{
+font-size: 55px;
+margin-bottom: 10px;
+text-align: start;
+}
+.convertContainer>h3{
+font-size: 20px;
+font-weight: 400;
+text-align: start;
+}
+.convertContainer>label{
+padding: 10px 0;
+}
+.convertContainer>input{
+width: 95%;
+font-size: 16px;
+border-radius: 5px;
+border: none;
+padding: 5px 10px;
+}
+.convertContainer>button{
+margin:20px 0;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+padding: 5px 10px;
+}
+.convertContainer>p{
+margin: 5px 0;
+font-size: 16px;
 }

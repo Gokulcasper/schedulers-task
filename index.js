@@ -150,7 +150,6 @@
 //         }
 //     },1000);
 // }
-
 // function defuse(event1){
 // if(event1.key === 'Enter')
 // {
@@ -164,5 +163,41 @@
 // }
 // }
 // defuser.addEventListener('keypress',defuse);
-
 // startTime();
+
+// ============== Time Converter =============
+let hoursInputEl = document.getElementById("hoursInput");
+let minutesInputEl = document.getElementById("minutesInput");
+let convertBtn = document.getElementById("convertBtn");
+let timeInSeconds = document.getElementById("timeInSeconds");
+let errorMsg = document.getElementById("errorMsg");
+
+function convertToSeconds(){
+
+    let hoursInput = hoursInputEl.value;
+    let minutesInput = minutesInputEl.value;
+errorMsg.textContent='';
+timeInSeconds.textContent='';
+
+if(hoursInput === '' || minutesInput === '')
+{
+    errorMsg.textContent = "Please enter values for both Hours and Minutes!.";
+    errorMsg.style.color = "red";
+    return;
+}
+let hours = parseInt(hoursInput);
+let minutes = parseInt(minutesInput);
+
+if(isNaN(hours) || isNaN(minutes) || hours < 0 || minutes < 0)
+{
+    errorMsg.textContent = "Please Enter positive values for hours and minutes";
+    errorMsg.color="red";
+    timeInSeconds.textContent = '';
+}else{
+let timeSeconds = (hours * 3600) + (minutes * 60);
+timeInSeconds.textContent = `Time in Seconds : ${timeSeconds}`;
+}
+hoursInputEl.value = "";
+minutesInputEl.value = "";
+}
+convertBtn.addEventListener('click',convertToSeconds);
